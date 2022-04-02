@@ -1,0 +1,16 @@
+/* FOOTER */
+
+/* phones */
+@media only screen and (min-width: 0px) {
+  footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+/* tablets*/
+@media only screen and (min-width: 361px) {
+}
+/* laptops and desktops */
+@media only screen and (min-width: 769px) {
+}

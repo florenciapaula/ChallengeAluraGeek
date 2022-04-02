@@ -1,0 +1,131 @@
+/* HEADER */
+
+/* phones */
+@media only screen and (min-width: 0px) {
+  body {
+    max-width: 360px;
+    min-width: 360px;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+  }
+
+  header {
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0rem;
+    display: flex;
+    width: 100%;
+  }
+
+  .logo--div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 800;
+  }
+  .logo--div img {
+    margin-right: 0.1rem;
+  }
+
+  .logo--div h1 span {
+    color: #2a7ae4;
+  }
+
+  .login--button {
+    height: 40px;
+    width: 133px;
+    border-width: 1px;
+    background-color: white;
+    border: solid #2a7ae4 1px;
+    color: #2a7ae4;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0.5rem 1.5rem;
+    display: inline;
+  }
+  a {
+    text-decoration: none;
+    color: #2a7ae4;
+  }
+  .search--div {
+    display: inline;
+    display: flex;
+  }
+  .search--input {
+    width: 0px;
+    display: none;
+  }
+}
+/* tablets*/
+@media only screen and (min-width: 361px) {
+  body {
+    max-width: 768px;
+    min-width: 760px;
+    box-sizing: border-box;
+  }
+
+  .search--div {
+    position: relative;
+    right: 260px;
+    width: 250px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    color: #a2a2a2;
+    padding: 0.5rem;
+  }
+  .search--input {
+    outline: none;
+    display: block;
+    width: 220px;
+    height: 15px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+  }
+  .search--img {
+    padding-right: 0rem;
+  }
+  .login--div {
+    position: relative;
+    left: 350px;
+  }
+}
+/* laptops and desktops */
+@media only screen and (min-width: 769px) {
+  body {
+    max-width: 1500px;
+    min-width: 1440px;
+  }
+  .header {
+    padding: 2rem 0rem;
+  }
+  .logo--div h1 {
+    font-size: 26px;
+  }
+  .logo--img {
+    height: 1.5rem;
+  }
+
+  .search--div {
+    position: relative;
+    right: 650px;
+    width: 300px;
+  }
+  .search--input {
+    outline: none;
+    display: block;
+    width: 265px;
+    height: 20px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+  }
+  .search--img {
+    padding-right: 1rem;
+  }
+  .login--div {
+    position: relative;
+    left: 600px;
+  }
+}

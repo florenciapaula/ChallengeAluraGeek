@@ -1,0 +1,58 @@
+/* PRINCIPAL */
+
+/* phones */
+@media only screen and (min-width: 0px) {
+  .principal--section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("../images/principal/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .principal--h2 {
+    padding: 5rem 0rem 1rem 0rem;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .principal--p {
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .principal--button {
+    height: 40px;
+    width: 133px;
+    border-width: 1px;
+    border: none;
+    background-color: #2a7ae4;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0.5rem 1.5rem;
+    display: inline;
+    margin-bottom: 0.8rem;
+  }
+}
+/* tablets*/
+@media only screen and (min-width: 361px) {
+  .principal--h2{
+    font-size: 52px;
+  }
+  .principal--p{
+    font-size: 22px;
+  }
+  .principal--button {
+    font-size: 14px;
+    width: 145px;
+  }
+}
+/* laptops and desktops */
+@media only screen and (min-width: 769px) {
+}

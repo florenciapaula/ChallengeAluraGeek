@@ -1,0 +1,124 @@
+/* ABOUT Y CONTACTO */
+
+/* phones */
+@media only screen and (min-width: 0px) {
+  .about--section {
+    padding: 1rem;
+    background-color: #eaf2fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about--section div h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: 600;
+  }
+  .about--section div h2 span {
+    margin-left: 0.1rem;
+    color: #2a7ae4;
+  }
+  .about--section div ul li {
+    padding: 0.5rem;
+  }
+  .formulario {
+    width: 80%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario h3 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .grupo-form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+  }
+  label {
+    text-align: left;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+  #input:focus,
+  #textarea:focus {
+    outline: none;
+    border-bottom: solid #2a7ae4 2px;
+  }
+  .formulario input,
+  .formulario textarea {
+    border: none;
+    border-bottom: solid #c8c8c8 2px;
+    margin-top: 0.5rem;
+    background-color: white;
+  }
+  .formulario--button {
+    height: 40px;
+    width: 140px;
+    border-width: 1px;
+    border: none;
+    background-color: #2a7ae4;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0.5rem 1.5rem;
+    display: inline;
+  }
+}
+/* tablets*/
+@media only screen and (min-width: 361px) {
+  .about--section {
+    width: 100%;
+    flex-direction: row;
+  }
+  .about--section div {
+    margin-right: 2rem;
+    text-align: left;
+    width: 70%;
+  }
+  .about--section div h2 {
+    justify-content: left;
+    padding-left: 1.5rem;
+  }
+  .about--section div ul {
+    padding-left: 1rem;
+  }
+  .about--section div ul li {
+    padding-top: 1rem;
+  }
+  .formulario {
+    padding-bottom: 3rem;
+  }
+}
+/* laptops and desktops */
+@media only screen and (min-width: 769px) {
+  .about--section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+  }
+  .about--section div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about--section div h2 {
+    padding: 0px;
+    justify-content: center;
+    padding-top: 1rem;
+    align-items: flex-start;
+  }
+  .formulario {
+    width: 80%;
+  }
+}
