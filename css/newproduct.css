@@ -1,0 +1,123 @@
+/* phones */
+@media only screen and (min-width: 0px) {
+  .new--product--section {
+    background-color: #e5e5e5;
+    padding: 1rem;
+  }
+  .new--product--section h3 {
+    padding: 1rem 0rem;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .drag--area {
+    background-color: white;
+    background-image: url(../images/logo/mas.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    padding: 8rem;
+    border: dashed #c8c8c8 5px;
+  }
+  #label1 {
+    width: 300px;
+    text-align: center;
+    position: relative;
+    top: 1.8rem;
+    display: block;
+    font-size: 14px;
+    color: #6b6b6b;
+  }
+  #label2 {
+    display: none;
+  }
+  .drag--area p,
+  .drag--area button {
+    display: none;
+  }
+  .input {
+    border: none;
+    border-bottom: solid #c8c8c8 2px;
+    margin-top: 0.5rem;
+    background-color: white;
+  }
+  .input:focus {
+    outline: none;
+    border-bottom: solid #2a7ae4 2px;
+  }
+  #button-new-product {
+    width: 100%;
+  }
+}
+/* tablets*/
+@media only screen and (min-width: 361px) {
+  .drag--area {
+    width: 15%;
+    height: 90px;
+    background-color: white;
+    background-image: url(../images/logo/img.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    padding: 8rem;
+    border: dashed #c8c8c8 5px;
+  }
+  #label1 {
+    display: none;
+  }
+  #label2 {
+    display: block;
+    width: 300px;
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 4rem;
+    font-size: 14px;
+    color: #6b6b6b;
+  }
+  .drag--area button {
+    display: block;
+    position: relative;
+    top: -52px;
+    left: 380px;
+  }
+  .drag--area p {
+    display: block;
+    position: relative;
+    top: -25px;
+    left: 360px;
+  }
+  .search--button {
+    height: 40px;
+    width: 250px;
+    border-width: 1px;
+    background-color: #e5e5e5;
+    border: solid #2a7ae4 1px;
+    color: #2a7ae4;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0.5rem 1.5rem;
+    display: inline;
+  }
+}
+/* laptops and desktops */
+@media only screen and (min-width: 769px) {
+  .new--product--section {
+    padding: 1rem 20%;
+  }
+  .drag--area button {
+    display: block;
+    position: relative;
+    top: -52px;
+    left: 400px;
+  }
+  .drag--area p {
+    display: block;
+    position: relative;
+    top: -25px;
+    left: 370px;
+  }
+}

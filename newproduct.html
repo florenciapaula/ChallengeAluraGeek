@@ -30,8 +30,8 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/producto.css" />
-    <link rel="stylesheet" href="css/catalogo.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/newproduct.css" />
     <link rel="stylesheet" href="css/contacto.css" />
     <link rel="stylesheet" href="css/footer.css" />
   </head>
@@ -55,82 +55,42 @@
       </div>
     </header>
 
-    <!-- PRODUCTO DESTACADO -->
+    <!-- SECCION NUEVO PRODUCTO -->
 
-    <section class="producto--destacado">
+    <section class="new--product--section">
+      <h3>Agregar nuevo producto</h3>
+      <!-- DRAG AND DROP SECTION -->
 
-      <div class="destacado--div--img">
-       
+        <div class="drag--area">
+
+          <img />
+          <label id="label1" for="drag--area">Agregar una imagen para el producto</label>
+          <label id="label2" for="drag--area">Arrastre para agregar una imagen para el producto</label>
+
+          <p>O</p>
+          <button class="search--button" id="button-search-product">Busque en su dispositivo</button>
+
+        </div>
+  
+
+      <!-- TEXT INPUTS -->
+
+      <div class="grupo-form">
+        <label for="input">Nombre</label>
+        <input class="input" />
       </div>
 
-      <div class="destacado--p">
-        <p id="titulo">Producto XYZ</p>
-        <p id="precio">$ 60.00</p>
-        <p id="descripcion">
-          Voluptas voluptatum quibusdam similique, class debitis alias maecenas
-          eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima
-          malesuada habitasse distinctio sequi aliqua malesuada. Quisque
-          deleniti proin expedita, aliquid litora. Iste recusandae? Commodo,
-          quia ridiculus doloribus vero dictum? Penatibus donec placeat
-          faucibus, dolorum do. Animi porta anim magnam
-        </p>
-
-      </div>
-    </section>
-
-    <section class="catalogo--section">
-
-      <!-- PRODUCTOS SIMILARES -->
-
-      <div class="catalogo--categoria">
-        <h3 class="catalogo--h3">Productos Similares</h3>
+      <div class="grupo-form">
+        <label for="input">Precio</label>
+        <input class="input" />
       </div>
 
-      <!-- SECCION PRODUCTOS-->
-
-      <div class="productos">
-        <div class="catalogo--div">
-          <img src="images/productos/1.jpg" />
-          <p>Producto XYZ</p>
-          <p>$ 60.00</p>
-          <a class="catalogo--a" href="producto.html">Ver producto</a>
-        </div>
-
-        <div class="catalogo--div">
-          <img src="images/productos/2.jpg" />
-          <p>Producto XYZ</p>
-          <p>$ 60.00</p>
-          <a class="catalogo--a" href="producto.html">Ver producto</a>
-        </div>
-
-        <div class="catalogo--div">
-          <img src="images/productos/3.jpg" />
-          <p>Producto XYZ</p>
-          <p>$ 60.00</p>
-          <a class="catalogo--a" href="producto.html">Ver producto</a>
-        </div>
-
-        <div class="catalogo--div">
-          <img src="images/productos/4.jpg" />
-          <p>Producto XYZ</p>
-          <p>$ 60.00</p>
-          <a class="catalogo--a" href="producto.html">Ver producto</a>
-        </div>
-
-        <div class="catalogo--div">
-          <img src="images/productos/5.jpg" />
-          <p>Producto XYZ</p>
-          <p>$ 60.00</p>
-          <a class="catalogo--a" href="producto.html">Ver producto</a>
-        </div>
-
-        <div class="catalogo--div">
-          <img src="images/productos/6.jpg" />
-          <p>Producto XYZ</p>
-          <p>$ 60.00</p>
-          <a class="catalogo--a" href="producto.html">Ver producto</a>
-        </div>
+      <div class="grupo-form">
+        <label for="textarea">Descripcion</label>
+        <textarea class="input" id="textarea"></textarea>
       </div>
+
+      <button class="formulario--button" id="button-new-product">Agregar producto</button>
     </section>
 
     <!-- ABOUT US Y FORMULARIO -->

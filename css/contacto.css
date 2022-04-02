@@ -119,6 +119,10 @@
     justify-content: center;
     padding-top: 1rem;
     align-items: flex-start;
+    font-size: 22px;
+  }
+  .about--section div h2 img {
+    height: 1.4rem;
   }
   .formulario {
     width: 80%;
