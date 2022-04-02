@@ -3,6 +3,8 @@
 /* phones */
 @media only screen and (min-width: 0px) {
   .about--section {
+    width: 100%;
+    box-sizing: border-box;
     padding: 1rem;
     background-color: #eaf2fd;
     display: flex;

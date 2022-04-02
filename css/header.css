@@ -3,13 +3,12 @@
 /* phones */
 @media only screen and (min-width: 0px) {
   body {
+    width: 100%;
     max-width: 360px;
     min-width: 360px;
-    margin: auto;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
   }
-
   header {
     justify-content: space-around;
     align-items: center;
@@ -25,7 +24,7 @@
     font-weight: 800;
   }
   .logo--div img {
-    margin-right: 0.1rem;
+    padding-right: 0.1rem;
   }
 
   .logo--div h1 span {
@@ -60,9 +59,9 @@
 /* tablets*/
 @media only screen and (min-width: 361px) {
   body {
+    width: 100%;
     max-width: 768px;
-    min-width: 760px;
-    box-sizing: border-box;
+    min-width: 768px;
   }
 
   .search--div {
@@ -94,6 +93,7 @@
 /* laptops and desktops */
 @media only screen and (min-width: 769px) {
   body {
+    width: 100%;
     max-width: 1500px;
     min-width: 1440px;
   }

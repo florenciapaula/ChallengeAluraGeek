@@ -3,10 +3,9 @@
 /* phones */
 @media only screen and (min-width: 0px) {
   .catalogo--section {
-    margin: 0px;
-    padding: 1rem;
+    box-sizing: border-box;
+    padding: 1rem 0.5rem;
     background-color: #e5e5e5;
-    padding-bottom: 1rem;
   }
   .catalogo--categoria {
     display: flex;
@@ -75,7 +74,6 @@
     width: 100%;
     padding: 1rem;
     background-color: #e5e5e5;
-    padding-bottom: 1rem;
   }
   .productos {
     display: grid;
