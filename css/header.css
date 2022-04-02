@@ -3,9 +3,10 @@
 /* phones */
 @media only screen and (min-width: 0px) {
   body {
+    margin: auto;
     width: 100%;
     max-width: 360px;
-    min-width: 360px;
+    min-width: 340px;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
   }
@@ -59,9 +60,8 @@
 /* tablets*/
 @media only screen and (min-width: 361px) {
   body {
-    width: 100%;
     max-width: 768px;
-    min-width: 768px;
+    min-width: 778px;
   }
 
   .search--div {
@@ -93,8 +93,7 @@
 /* laptops and desktops */
 @media only screen and (min-width: 769px) {
   body {
-    width: 100%;
-    max-width: 1500px;
+    max-width: 1440px;
     min-width: 1440px;
   }
   .header {
