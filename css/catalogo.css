@@ -4,6 +4,7 @@
 @media only screen and (min-width: 0px) {
   .catalogo--section {
     background-color: #e5e5e5;
+    padding: 0rem 0.5rem 0rem 0.5rem;
   }
   .catalogo--categoria {
     display: flex;
@@ -23,14 +24,13 @@
   .catalogo--a {
     color: #2a7ae4;
   }
-  .catalogo--a img{
+  .catalogo--a img {
     padding: 0.1rem;
   }
   .productos {
     display: grid;
     grid-template-columns: auto auto;
   }
-
   .productos .catalogo--div:nth-child(5) {
     display: none;
   }
@@ -40,6 +40,7 @@
   .catalogo--div {
     display: flex;
     flex-direction: column;
+    padding-bottom: 0.5rem;
   }
   .catalogo--div p,
   .catalogo--div a {
@@ -51,6 +52,9 @@
 }
 /* tablets*/
 @media only screen and (min-width: 361px) {
+  .catalogo--section {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
   .productos {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -58,17 +62,18 @@
   }
   .catalogo--div p,
   .catalogo--div a {
-   font-size: 12px;
+    font-size: 12px;
   }
 }
 /* laptops and desktops */
 @media only screen and (min-width: 769px) {
-
+  .catalogo--section {
+    padding: 0.5rem 3rem 0.5rem 3rem;
+  }
   .productos {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
   }
- 
   .productos .catalogo--div:nth-child(5) {
     display: block;
   }

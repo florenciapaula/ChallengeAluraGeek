@@ -45,6 +45,7 @@
 /* tablets*/
 @media only screen and (min-width: 361px) {
   .principal--section {
+    padding: 5rem 2rem 2rem 2rem;
     height: 320px;
   }
   .principal--h2 {
@@ -60,4 +61,7 @@
 }
 /* laptops and desktops */
 @media only screen and (min-width: 769px) {
+  .principal--section {
+    padding: 5rem 5rem 2rem 5rem;
+  }
 }
