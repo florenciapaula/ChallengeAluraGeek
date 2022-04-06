@@ -4,7 +4,7 @@
 @media only screen and (min-width: 0px) {
   .catalogo--section {
     box-sizing: border-box;
-    padding: 1rem 0.5rem;
+    padding: 0rem 0rem;
     background-color: #e5e5e5;
   }
   .catalogo--categoria {
@@ -32,10 +32,10 @@
   .productos {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 0rem 1rem;
+    padding: 0rem 0rem;
     box-sizing: border-box;
-    column-gap: 1rem;
-    row-gap: 0.5rem;
+    column-gap: 0rem;
+    row-gap: 0rem;
   }
 
   .productos .catalogo--div:nth-child(5) {
@@ -54,7 +54,7 @@
   }
   .catalogo--div img {
     margin: auto;
-    width: 100%;
+    width: 90%;
   }
 }
 /* tablets*/
