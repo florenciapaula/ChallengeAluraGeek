@@ -3,8 +3,10 @@
 @media only screen and (min-width: 0px) {
   body {
     width: auto;
+    margin: auto;
     max-width: 360px;
-    min-width: 350px;  
+    min-width: 340px;
+    box-sizing: border-box;
     font-family: "Raleway", sans-serif;
   }
   header {
@@ -13,7 +15,6 @@
     padding: 1rem 0rem;
     display: flex;
     width: 100%;
-
   }
 
   .logo--div {
@@ -46,14 +47,15 @@
     text-decoration: none;
     color: #2a7ae4;
   }
-  .search--div {
-    display: inline;
+  .search--div{
     display: flex;
+    justify-content: center;
   }
-  .search--input {
-    width: 0px;
+  .search--input{
+    width: 20px;
     display: none;
   }
+
 }
 /* tablets*/
 @media only screen and (min-width: 361px) {
@@ -63,7 +65,8 @@
   }
 
   .search--div {
-
+    position: relative;
+    right: 260px;
     width: 250px;
     background-color: #f5f5f5;
     border-radius: 15px;
@@ -83,14 +86,15 @@
     padding-right: 0rem;
   }
   .login--div {
-
+    position: relative;
+    left: 350px;
   }
 }
 /* laptops and desktops */
 @media only screen and (min-width: 769px) {
   body {
     max-width: 1440px;
-    min-width: 2000px;
+    min-width: 1440px;
   }
   .header {
     padding: 2rem 0rem;
@@ -103,7 +107,8 @@
   }
 
   .search--div {
-
+    position: relative;
+    right: 650px;
     width: 300px;
   }
   .search--input {
@@ -119,6 +124,7 @@
     padding-right: 1rem;
   }
   .login--div {
-
+    position: relative;
+    left: 600px;
   }
 }
