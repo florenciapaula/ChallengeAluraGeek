@@ -1,0 +1,111 @@
+/* PRODUCTO */
+
+/* phones */
+@media only screen and (min-width: 0px) {
+  .producto--destacado {
+    background-color: #e5e5e5;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  .destacado--div--img {
+    display: grid;
+    background-image: url("../images/productos/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 360px;
+  }
+  .destacado--p {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  #titulo {
+    margin-bottom: 1rem;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  #precio {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #descripcion {
+    width: 80%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+/* tablets*/
+@media only screen and (min-width: 361px) {
+  .producto--destacado {
+    display: flex;
+    padding: 2rem 0rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .destacado--div--img {
+    background-image: url("../images/productos/1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+  }
+  .destacado--p {
+    width: 35%;
+  }
+  #titulo {
+    margin-bottom: 1rem;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  #precio {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #descripcion {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+/* laptops and desktops */
+@media only screen and (min-width: 769px) {
+  .producto--destacado {
+    display: flex;
+    padding: 2rem 0rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .destacado--div--img {
+    background-image: url("../images/productos/1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+  }
+  .destacado--p {
+    width: 35%;
+    padding-left: 3rem;
+  }
+  #titulo {
+    margin-bottom: 1rem;
+    font-size: 52px;
+    font-weight: 500;
+  }
+  #precio {
+    margin-bottom: 1rem;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  #descripcion {
+    width: 70%;
+    font-size: 22px;
+    font-weight: 400;
+  }
+}
