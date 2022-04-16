@@ -53,11 +53,29 @@
   }
   .search--div {
     display: flex;
-    justify-content: center;
+    padding: 0.3rem;
+    justify-content: space-between;
+    border-radius: 15px;
   }
   .search--input {
-    width: 1px;
-    display: none;
+    width: 0px;
+    outline: none;
+    height: 20px;
+    border: none;
+    border-radius: 15px;
+    transition: ease-out 800ms;
+   
+  }
+  .search--input:focus {
+    transition: ease-in 800ms;
+    background-color: #f5f5f5;
+    color: #a2a2a2;
+    width: 110px;
+    font-size: 11px;
+  }
+  .search--div:focus-within {
+    background-color: #f5f5f5;
+    color: #a2a2a2;
   }
 }
 /* tablets*/
