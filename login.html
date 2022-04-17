@@ -72,7 +72,9 @@
           id="password"
         />
 
-        <button class="formulario--button">Entrar</button>
+        <button class="formulario--button" onclick="validarUsuario();">
+          Entrar
+        </button>
       </form>
     </section>
 
@@ -91,20 +93,22 @@
         </ul>
       </div>
 
-      <form class="formulario">
+      <form class="formulario" onsubmit="evitarRecarga(event)">
         <h3>Hable con nosotros</h3>
 
         <div class="grupo-form">
           <label for="input">Nombre</label>
-          <input id="input" />
+          <input maxlength="40" id="input" />
         </div>
 
         <div class="grupo-form">
           <label for="textarea">Escribe tu mensaje</label>
-          <textarea id="textarea"></textarea>
+          <textarea maxlength="120" id="textarea"></textarea>
         </div>
 
-        <button class="formulario--button">Enviar mensaje</button>
+        <button class="formulario--button" onclick="enviarMensaje();">
+          Enviar mensaje
+        </button>
       </form>
     </section>
 

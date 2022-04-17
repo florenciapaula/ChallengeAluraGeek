@@ -61,14 +61,17 @@
       <h3>Agregar nuevo producto</h3>
       <!-- DRAG AND DROP SECTION -->
 
-        <div class="drag--area">
+        <div class="drag--area" ondragend="dropArchivo();">
 
           <img />
           <label id="label1" for="drag--area">Agregar una imagen para el producto</label>
           <label id="label2" for="drag--area">Arrastre para agregar una imagen para el producto</label>
 
           <p>O</p>
-          <button class="search--button" id="button-search-product">Busque en su dispositivo</button>
+
+          <button class="search--button" id="button-search-product" onclick="cargarArchivo();">
+            <input id="file-input" type="file"/>
+          Buscar archivo en su equipo</button>
 
         </div>
   
@@ -77,20 +80,20 @@
 
       <div class="grupo-form">
         <label for="input">Nombre</label>
-        <input class="input" />
+        <input id="nombreProducto" class="input" maxlength="20" required/>
       </div>
 
       <div class="grupo-form">
         <label for="input">Precio</label>
-        <input class="input" />
+        <input id="precioProducto"  class="input" type="number" required/>
       </div>
 
       <div class="grupo-form">
         <label for="textarea">Descripcion</label>
-        <textarea class="input" id="textarea"></textarea>
+        <textarea id="descripcionProducto" class="input" id="textarea" maxlength="150" required></textarea>
       </div>
 
-      <button class="formulario--button" id="button-new-product">Agregar producto</button>
+      <button class="formulario--button" id="button-new-product" onclick="agregarProducto()">Agregar producto</button>
     </section>
 
     <!-- ABOUT US Y FORMULARIO -->
@@ -108,21 +111,23 @@
         </ul>
       </div>
 
-      <form class="formulario">
+      <form class="formulario" onsubmit="evitarRecarga(event)">
         <h3>Hable con nosotros</h3>
 
         <div class="grupo-form">
           <label for="input">Nombre</label>
-          <input id="input" />
+          <input maxlength="40" id="input" />
         </div>
 
         <div class="grupo-form">
           <label for="textarea">Escribe tu mensaje</label>
-          <textarea id="textarea"></textarea>
+          <textarea maxlength="120" id="textarea"></textarea>
         </div>
 
-        <button class="formulario--button">Enviar mensaje</button>
+        <button class="formulario--button" onclick="enviarMensaje();">Enviar mensaje</button>
       </form>
+    </section>
+
     </section>
 
     <!-- FOOTER -->

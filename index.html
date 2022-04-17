@@ -62,7 +62,7 @@
       <p class="principal--p">
         Productos seleccionados con un 33% de descuento
       </p>
-      <button class="principal--button">Ver Consolas</button>
+      <button type="submit" class="principal--button" onclick="window.location.href='#consolas'">Ver Consolas</button>
     </section>
 
     <!-- STAR WARS PRODUCTOS -->
@@ -127,7 +127,7 @@
     <section class="catalogo--section">
       <!-- TITULO CATEGORIA -->
 
-      <div class="catalogo--categoria">
+      <div class="catalogo--categoria" id="consolas">
         <h3 class="catalogo--h3">Consolas</h3>
         <a class="catalogo--a" href="allproducts.html">Ver todo<img src="images/logo/flecha.svg" /> </a>
       </div>
@@ -251,20 +251,20 @@
         </ul>
       </div>
 
-      <form class="formulario">
+      <form class="formulario" onsubmit="evitarRecarga(event)">
         <h3>Hable con nosotros</h3>
 
         <div class="grupo-form">
           <label for="input">Nombre</label>
-          <input id="input" />
+          <input maxlength="40" id="input" />
         </div>
 
         <div class="grupo-form">
           <label for="textarea">Escribe tu mensaje</label>
-          <textarea id="textarea"></textarea>
+          <textarea maxlength="120" id="textarea"></textarea>
         </div>
 
-        <button class="formulario--button">Enviar mensaje</button>
+        <button class="formulario--button" onclick="enviarMensaje();">Enviar mensaje</button>
       </form>
     </section>
 
