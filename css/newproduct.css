@@ -36,6 +36,9 @@
   .drag--area button {
     display: none;
   }
+  #file-input {
+    display: none;
+  }
   .input {
     border: none;
     border-bottom: solid #c8c8c8 2px;
