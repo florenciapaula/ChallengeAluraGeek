@@ -12,6 +12,8 @@ function validarUsuario() {
   }
 }
 
+//Enviar mensaje con validacion de campos no nulos
+
 function enviarMensaje() {
   var nombre = document.getElementById("input").value;
   var texto = document.getElementById("textarea").value;
@@ -31,36 +33,45 @@ function enviarMensaje() {
   }
 }
 
+//prevent default recarga de formulario
+
 function evitarRecarga(event) {
   event.preventDefault();
   return false;
 }
 
+//cargar archivo desde la pc seleccionando
+
 function cargarArchivo() {
   document.getElementById("file-input").click();
-  console.log("agregar archivo OK");
+  console.log("agregar archivo OK");//en progreso
 }
+
+//cargar archivo desde la pc arrastrando
 
 function dropArchivo() {
-  console.log("agregar archivo OK");
+  console.log("agregar archivo OK");//en progreso
 }
 
-function agregarProducto() {
+//agregar producto (tomar datos ingresados por el usuario y almacenarlos en variables)
 
+function agregarProducto() {
   var nombreProducto = document.getElementById("nombreProducto").value;
   var precioProducto = document.getElementById("precioProducto").value;
   var descripcionProducto = document.getElementById(
     "descripcionProducto"
   ).value;
 
-  if (nombreProducto!="" && precioProducto!=""&&descripcionProducto!=""){
+  if (
+    nombreProducto != "" &&
+    precioProducto != "" &&
+    descripcionProducto != ""
+  ) {
     console.log(nombreProducto);
     console.log(precioProducto);
     console.log(descripcionProducto);
-    console.log("agregar producto OK");
-  }
-  else{
+    console.log("agregar producto OK");//conectar a base de datos para dar de alta ese producto
+  } else {
     alert("Complete todos los campos");
   }
-
 }
